@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&display=swap')
+
+$light_cyan: hsl(193, 38%, 86%)
+$neon_green: hsl(150, 100%, 66%)
+$grayish_blue: hsl(217, 19%, 38%)
+$dark_grayish_blue: hsl(217, 19%, 24%)
+$dark_blue: hsl(218, 23%, 16%)
+
+@mixin responsive($width)
+    @media screen and (min-width: $width)
+        @content
+
+*
+    // outline: 1px solid #ff000067
+
+html
+    font-family: 'Manrope', sans-serif
+
+.card
+    margin: 1rem
+    background: $dark_grayish_blue
+    border-radius: .75rem
+    padding: 0 3rem
+    min-width: 20rem
+    max-width: 26.5625rem
+    
+    .card-content
+        display: grid
+        place-items: center
+        row-gap: 1.25rem
+        padding-top: 1rem
+        transform: translateY(1.5rem)
+
+    p
+        font-size: .625rem
+        color: $neon_green
+        text-transform: uppercase
+        letter-spacing: .25rem
+        font-weight: 800
+
+    h1
+        font-size: 1.75rem
+        text-align: center
+        color: $light_cyan
+        line-height: 1.25
+        font-weight: 800
+
+    .divider
+        margin: .75rem 0
+        display: grid
+        grid-template-columns: 1fr min-content 1fr
+        column-gap: .625rem
+        place-items: center        
+        width: 100%
+
+        span
+            display: grid
+            grid-auto-flow: column
+            column-gap: .5rem
+
+            &::before, &::after
+                font-size: 1rem
+                content: '.'
+                color: #0000
+                height: .75rem
+                width: .3125rem
+                background: $light_cyan
+                border-radius: 10px
+
+        &::before, &::after
+            content: ''
+            width: 100%
+            height: 1px
+            background: $grayish_blue
+
+    input
+        background: url('../images/icon-dice.svg') $neon_green no-repeat
+        background-size: 1.25rem
+        background-position: center center
+        width: 3.125rem
+        height: 3.125rem
+        border: none
+        border-radius: 100%

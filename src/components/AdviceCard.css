@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@700;800&display=swap");
+html {
+  font-family: "Manrope", sans-serif;
+}
+
+.card {
+  margin: 1rem;
+  background: hsl(217deg, 19%, 24%);
+  border-radius: 0.75rem;
+  padding: 0 3rem;
+  min-width: 20rem;
+  max-width: 26.5625rem;
+}
+.card .card-content {
+  display: grid;
+  place-items: center;
+  row-gap: 1.25rem;
+  padding-top: 1rem;
+  transform: translateY(1.5rem);
+}
+.card p {
+  font-size: 0.625rem;
+  color: hsl(150deg, 100%, 66%);
+  text-transform: uppercase;
+  letter-spacing: 0.25rem;
+  font-weight: 800;
+}
+.card h1 {
+  font-size: 1.75rem;
+  text-align: center;
+  color: hsl(193deg, 38%, 86%);
+  line-height: 1.25;
+  font-weight: 800;
+}
+.card .divider {
+  margin: 0.75rem 0;
+  display: grid;
+  grid-template-columns: 1fr min-content 1fr;
+  -moz-column-gap: 0.625rem;
+       column-gap: 0.625rem;
+  place-items: center;
+  width: 100%;
+}
+.card .divider span {
+  display: grid;
+  grid-auto-flow: column;
+  -moz-column-gap: 0.5rem;
+       column-gap: 0.5rem;
+}
+.card .divider span::before, .card .divider span::after {
+  font-size: 1rem;
+  content: ".";
+  color: rgba(0, 0, 0, 0);
+  height: 0.75rem;
+  width: 0.3125rem;
+  background: hsl(193deg, 38%, 86%);
+  border-radius: 10px;
+}
+.card .divider::before, .card .divider::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background: hsl(217deg, 19%, 38%);
+}
+.card input {
+  background: url("../images/icon-dice.svg") hsl(150deg, 100%, 66%) no-repeat;
+  background-size: 1.25rem;
+  background-position: center center;
+  width: 3.125rem;
+  height: 3.125rem;
+  border: none;
+  border-radius: 100%;
+}/*# sourceMappingURL=AdviceCard.css.map */
