@@ -37,8 +37,8 @@ export const AdviceCard = () => {
         <div className="card">
             <div className="card-content">
                 {loadAdvice()}
-                <h1 className="divider"><span></span></h1>
-                <input type="button" onClick={generateAdvice} />
+                <div className="divider"><span></span></div>
+                <input type="button" onClick={generateAdvice} value="randomize" />
             </div>
         </div>
     );
