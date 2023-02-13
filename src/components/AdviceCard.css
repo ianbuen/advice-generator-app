@@ -70,4 +70,9 @@ html {
   height: 3.125rem;
   border: none;
   border-radius: 100%;
+}
+.card input:hover {
+  cursor: pointer;
+  box-shadow: 0 0 1rem hsl(193deg, 38%, 86%);
+  filter: brightness(1.25);
 }/*# sourceMappingURL=AdviceCard.css.map */

@@ -6,13 +6,6 @@ $grayish_blue: hsl(217, 19%, 38%)
 $dark_grayish_blue: hsl(217, 19%, 24%)
 $dark_blue: hsl(218, 23%, 16%)
 
-@mixin responsive($width)
-    @media screen and (min-width: $width)
-        @content
-
-*
-    // outline: 1px solid #ff000067
-
 html
     font-family: 'Manrope', sans-serif
 
@@ -81,3 +74,9 @@ html
         height: 3.125rem
         border: none
         border-radius: 100%
+
+        &:hover 
+            cursor: pointer
+            box-shadow: 0 0 1rem $light_cyan
+            filter: brightness(1.25)
+        
