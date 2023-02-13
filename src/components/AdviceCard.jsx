@@ -13,7 +13,7 @@ export const AdviceCard = () => {
     const generateAdvice = async () => {
         setCard(null);
 
-        const newAdvice = await fetch('https://api.adviceslip.com/advice')
+        const newAdvice = await fetch(`https://api.adviceslip.com/advice/${Math.floor(Math.random() * 224 + 1)}`)
                 .then(res => res.json())
                 .then(data => data)
                 .catch(error => error);
